@@ -18,6 +18,11 @@
       "dest": "/index.js",
       "methods": ["GET"]
     },
+    {
+      "src": "/birds/about",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
 
     {
       "src": "/dictionary/api/v1/:words",

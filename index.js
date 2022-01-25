@@ -13,22 +13,16 @@ app.get("/", (req, res) => {
 
 // Mock API
 app.get("/users", (req, res) => {
-  res.json([
-    { name: "Vuong Nguyen", location: "New Zealand" },
-    { name: "Chris", location: "Vegas" }
-  ]);
+  res.json([{ name: "Vuong Nguyen", location: "New Zealand" }]);
 });
 
-
+app.get("/test", (req, res) => {
+  res.json([{ name: "test" }]);
+});
 
 app.get("/dictionary/api/v1/:word", (req, res) => {
-
-  res.json([
-    { name: "Vuong Nguyen", location: "New Zealand" },
-    { name: "Chris", location: "Vegas" }
-  ]);
+  res.json([{ name: "Vuong Nguyen", location: "New Zealand" }]);
 });
-
 
 app.post("/user", (req, res) => {
   const { name, location } = req.body;

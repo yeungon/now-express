@@ -10,7 +10,7 @@ app.use("/user", user);
 
 // Home route
 app.get("/", (req, res) => {
-  res.send("Welcome to Vietnamese Graphql");
+  res.send("<h1 style = 'display: flex; justify-content:center; align-items: center;'>Welcome to a simply Express CRUD hosted at Vercel<h1>");
 });
 
 app.get("/task", (req, res) => {

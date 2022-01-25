@@ -8,6 +8,18 @@
       "methods": ["GET"]
     },
     {
+      "src": "/test",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    
+    {
+      "src": "/birds",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+
+    {
       "src": "/dictionary/api/v1/:words",
       "dest": "/index.js",
       "methods": ["GET"]

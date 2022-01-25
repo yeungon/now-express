@@ -1,10 +1,14 @@
 const express = require("express");
 const app = express();
 
+var birds = require('./routers/bird')
+
 const port = 5000;
 
 // Body parser
 app.use(express.urlencoded({ extended: false }));
+
+app.use('/birds', birds)
 
 // Home route
 app.get("/", (req, res) => {
